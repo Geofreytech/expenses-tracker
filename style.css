@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  
+  background: #F8F8FF;
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+  
+  
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+#expense {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 10px;
+  margin-top: 0px;
+  
+}
+
+#expense td, #expense th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#expense tr{
+  background-color: white;
+  font-size: 20px;
+}
+
+#expense tr:hover {background-color: #ddd;}
+
+#expense th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5F9EA0;
+
+  color: white;
+}
+.buttons{
+  margin-top: 5%;
+}
+.add-btn{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  background-color: #5F9EA0;
+  width: 130px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: none;
+  border-radius: 7px;
+  border:none;
+}
+.edit-btn{
+  margin-left: 50px;
+  background-color: green;
+  width: 70px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 7px;
+  border:none;
+  text-decoration: none;
+
+}
+.delete-btn{
+  text-decoration: none;
+  margin-left: 50px;
+  background-color: red;
+  width: 70px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: none;
+  border-radius: 7px;
+  border:none;
+}
+.delete-btn a{
+  color: white;
+  text-decoration: none;
+}
+.msg {
+    margin-top: 40px;
+    padding: 10px; 
+    border-radius: 5px; 
+    color: #3c763d; 
+    background: #dff0d8; 
+    border: 1px solid #3c763d;
+    width: 50%;
+    text-align: center;
+    margin-left: 40px;
+}
+.form, .content {
+  width: 70%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 50px;
+  
+  
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.del-btn{
+  color: white;
+  text-decoration: none;
+}
+.btn-edit{
+  color: white;
+  text-decoration: none;
+}
+.btn-add{
+  color: white;
+  text-decoration: none;
+}
+
+body{
+  
+  background:#f2f4f4;
+  
+ }
+.navigation{
+background-color: #5F9EA0;
+text-align: ;
+}
+.navigation ul{
+ 
+  padding: 20px;
+
+
+
+}
+.navigation ul li{
+  display: inline-block;
+  padding-right: 60px;
+  
+
+
+
+}
+.navigation ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+
+#dashboard {
+  width:10vw;
+  padding:3vh 2vw;
+  height:92vh;
+  display:flex;
+  flex-direction:column;
+  
+  text-align:left;
+  background-color:white;
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  position:fixed;
+  color:black !important;
+  }
+  
+.sidenav {
+  margin-top: 80px;
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+
+
+}
+
+ .sidenav a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border-bottom: 1px solid gray;
+}
+
+
+
+.sidenav a:hover {
+  color: #30a5ff; }
+
+.main {
+  margin-left: 190px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+

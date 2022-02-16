@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/**
+this is the css code for styling the input part yaani penye unasearch 
+*/
+
+#myInput {
+  background-image:
+  url('/img/search.png'); /* hii ni background image
+*/
+
+  background-position: 10px 12px;  /* position of the input search in pixels
+*/
+  background-repeat: no-repeat; 
+  box-sizing: border-box;
+  width: 100%;     /* width mwisho na mwisho
+*/
+  font-size: 16px;   /* hii unajua
+*/
+  padding: 12px 20px 12px 40px;   /* separation or distance
+*/
+  border: 1px solid #ddd; /* separating line 
+*/
+  margin-bottom: 12px; /* space from bottom
+*/
+}
+
+/**
+this styles all the UL part both ul<unorderd list>, ordered list<li> na  <a ie hyperlinks>  in general though i suggest you adapt usage of class plus id 
+*/
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+this css style styles the hyperlink ie <a></a> code inside unordered list inside list
+*/
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;  /* this removes line under the hyper link text
+*/
+  font-size: 18px;
+  color: black;
+  display: block  /* this displays the hyperlinks in blocks
+*/
+}
+
+/*
+this css styles styles the header inside the hyperlink that is inside ul id  
+*/
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+/*
+this styles the cursor i.e when you move it itaona nikama inahighlight the list but not the header <soma more more about hovers>
+*/
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<h2>ANIMALS</h2>
+
+<!-- this is the search input part    "myFunction()" is javascript function its callede from the javascript yenye inafanya uweze kusearch-->
+<input type="text" id="myInput"
+onkeyup="myFunction()" placeholder=
+"Search Here.."title="Type in a name">
+
+
+<ul id="myUL">
+<!-- hizi ni lists inside them kuna hyperlinks za kila list  -->
+<li><a href="#" class="header">A</a></li>
+<li><a href="#">Alligator</a></li>
+<li><a href="#">Albatross</a></li>
+<li><a href="#">Antelope</a></li>
+
+<li><a href="#" class="header">B</a></li>
+<li><a href="#">Baboon</a></li>
+<li><a href="#">Blue Whale</a></li>
+
+<li><a href="#" class="header">C</a></li>
+<li><a href="#">Cheetah</a></li>
+<li><a href="#">Chimpanzee</a></li>
+<li><a href="#">Camel</a></li>
+
+</ul>
+
+<script>
+
+ /* Declare variables */  
+/* 
+this function enables you to search through the list
+*/
+function myFunction() {
+
+/* here you declare your all variables */
+
+var input, filter, ul, li, a, i;
+input=document.getElementById("myInput"); /* this get the search input by its id*/
+
+filter = input.value.toUpperCase();   /* this gets the input from search bar to caps */
+ul = document.getElementById("myUL");  /* this get the unordered list by id from html */
+li = ul.getElementsByTagName("li");    /*same case here */
+
+
+ /* Loop through all list items, and hide
+ those who don't match the search query */ 
+
+
+/* this part loops through all the lists after umesearch item and returns the entire searched item 
+*/
+
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+
+/* this part loops through all the lists after umesearch item and returns the entire searched item 
+if not found it returns none
+*/
+if (a.innerHTML.toUpperCase()
+.indexOf(filter) > -1) {
+  li[i].style.display = "";
+
+    } else {
+      li[i].style.display = "none";
+
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
